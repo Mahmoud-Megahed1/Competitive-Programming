@@ -21,11 +21,14 @@ Competitive-Programming/
 ├── Data-Structures/
 │   ├── AVL-Tree.cpp             # Self-balancing Binary Search Tree (Rotations, Insertions, Height balancing)
 │   ├── Binary-Heap.cpp          # Min/Max Priority Queue implementation with heapify operations
-│   └── Trie-Tree.cpp            # Prefix tree for high-speed string lookup and autocomplete
+│   ├── Trie-Tree.cpp            # Prefix tree for high-speed string lookup and autocomplete
+│   └── Disjoint-Set-Union.cpp   # DSU with Path Compression and Union by Size/Rank
 ├── Graphs/
 │   ├── Dijkstra.cpp             # Single-source shortest path using adjacency lists & priority queues
 │   ├── BFS-Shortest-Path.cpp    # Breadth-First Search with full path reconstruction
 │   └── Problem-900.cpp          # Graph connectivity and traversal routines
+├── Search-Techniques/
+│   └── Binary-Search-Patterns.cpp # Monotonic predicate binary search, custom lower/upper bounds, two pointers
 ├── Backtracking/
 │   └── N-Queens.cpp             # Classical N-Queens constraint satisfaction problem
 ├── Contests/
@@ -36,6 +39,8 @@ Competitive-Programming/
 │       ├── h.cpp
 │       └── i.cpp
 ├── Number-Theory-and-Math/
+│   ├── Modular-Arithmetic.cpp   # Fast power, modular inverse, extended Euclidean, fast nCr % MOD
+│   ├── Modular-Arithmetic-Reference.pdf # Comprehensive modular arithmetic theoretical guide
 │   ├── Primes-1-to-N.cpp        # Prime factorization and Sieve of Eratosthenes
 │   ├── Lucky-Numbers.cpp        # Digit property checking and base conversion
 │   ├── Fibonacci.cpp            # Recurrence relation modeling
@@ -57,8 +62,12 @@ Competitive-Programming/
 | **AVL Tree** | `Data-Structures/AVL-Tree.cpp` | O(log N) Search, Insert, Delete | O(N) |
 | **Binary Heap** | `Data-Structures/Binary-Heap.cpp` | O(log N) Push/Pop, O(1) Top | O(N) |
 | **Trie (Prefix Tree)** | `Data-Structures/Trie-Tree.cpp` | O(L) where L is string length | O(Alphabet_Size * L * N) |
+| **Disjoint Set Union (DSU)**| `Data-Structures/Disjoint-Set-Union.cpp` | O(α(N)) amortized per op | O(N) |
 | **Dijkstra Algorithm** | `Graphs/Dijkstra.cpp` | O((V + E) log V) | O(V + E) |
 | **BFS Path Reconstruction** | `Graphs/BFS-Shortest-Path.cpp` | O(V + E) | O(V) |
+| **Binary Search on Answer** | `Search-Techniques/Binary-Search-Patterns.cpp`| O(log(Search_Space) * Check_Cost) | O(1) |
+| **Fast Exponentiation** | `Number-Theory-and-Math/Modular-Arithmetic.cpp` | O(log EXP) | O(1) |
+| **Modular Combinatorics (nCr)** | `Number-Theory-and-Math/Modular-Arithmetic.cpp` | O(1) query (O(N) precomputed) | O(N) |
 | **N-Queens Solver** | `Backtracking/N-Queens.cpp` | O(N!) | O(N) |
 | **Sieve of Eratosthenes** | `Number-Theory-and-Math/Primes-1-to-N.cpp` | O(N log(log N)) | O(N) |
 
